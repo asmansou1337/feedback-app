@@ -1,6 +1,6 @@
-function Header({ title }) {
+function Header({ title, bgColor, textColor }) {
   return (
-    <header>
+    <header style={{ backgroundColor: bgColor, color: textColor }}>
       <div className='container'>
         <h2>{title}</h2>
       </div>
@@ -10,6 +10,8 @@ function Header({ title }) {
 
 Header.defaultProps = {
   title: 'Feedback UI',
+  bgColor: 'rgba(0,0,0,0.4)',
+  textColor: '#EC1957',
 };
 
 export default Header;
